@@ -81,7 +81,7 @@ readily available GRCm38 primary assembly (mm10) works as a substitute.
 ### 3. gEVE annotation
 
 Download `Mmus38.geve.m_v1.gtf` from the
-[gEVE database](http://geve.med.u-tokai.ac.jp) and place it in `ref/`.
+[gEVE database](https://github.com/ngs923/geve) and place it in `ref/`.
 
 ## Running the pipeline
 

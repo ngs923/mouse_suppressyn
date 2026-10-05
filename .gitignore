@@ -1,0 +1,30 @@
+# ---- analysis intermediates and outputs (never committed) ----
+eve_rnaseq/
+ref/
+*.sra
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bam.bai
+*.sam
+*.bt2
+*.bt2l
+*.fpkm_tracking
+.*.done
+
+# ---- local settings ----
+config.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- OS / editors ----
+.DS_Store
+.vscode/
+.idea/
+*~

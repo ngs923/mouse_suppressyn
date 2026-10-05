@@ -1,0 +1,27 @@
+{
+  "srr_ids": ["SRR392616", "SRR392617"],
+  "outdir": "eve_rnaseq",
+
+  "genome_fasta": "ref/GRCm38.p1.fa",
+  "bowtie2_index": "ref/GRCm38.p1",
+  "geve_gtf": "ref/Mmus38.geve.m_v1.gtf",
+
+  "adapter_r1": "AGATCGGAAGAGCACACGTCTGAACTCCAGTCA",
+  "adapter_r2": "AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT",
+  "quality_cutoff": 20,
+  "min_length": 30,
+
+  "tophat_max_multihits": 20,
+  "tophat_library_type": "fr-unstranded",
+  "tophat_mate_inner_dist": 50,
+  "tophat_mate_std_dev": 50,
+
+  "cufflinks_multi_read_correct": true,
+  "cufflinks_frag_bias_correct": true,
+  "cufflinks_library_type": "fr-unstranded",
+
+  "env_pattern": "env",
+
+  "threads": 16,
+  "sra_tmpdir": ""
+}

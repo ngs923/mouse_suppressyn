@@ -1,0 +1,31 @@
+# TopHat2 2.1.1, Cufflinks 2.2.1 and Cutadapt 1.8.3 are old tools, all from
+# the Python 2.7 era. Keep them in a dedicated conda environment.
+#
+#   conda env create -f environment.yml
+#   conda activate eve-rnaseq
+#
+# There are no arm64 builds of these tools, so on Apple Silicon Macs
+# (M1/M2/M3/M4) create the environment for x86_64 under Rosetta:
+#
+#   CONDA_SUBDIR=osx-64 conda env create -f environment.yml
+#   conda activate eve-rnaseq
+#   conda config --env --set subdir osx-64
+#
+# If that does not work, Docker is the more reliable route (see README.md).
+
+name: eve-rnaseq
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=2.7          # required by tophat2
+  - tophat=2.1.1
+  - cufflinks=2.2.1
+  - cutadapt=1.8.3
+  - bowtie2=2.2.9       # a generation that works well with tophat 2.1.1
+  - samtools=1.9
+  - sra-tools>=3.0      # prefetch / fasterq-dump
+  - pigz

@@ -1,4 +1,4 @@
-# mouse_suppressyn
+# RNA-seq analysis for mouse suppressyn identification
 
 A pipeline for quantifying the expression of endogenous retrovirus
 (ERV)-derived env genes in the mouse placenta, using public RNA-seq data and

@@ -22,10 +22,10 @@ channels:
 
 dependencies:
   - python=2.7          # required by tophat2
-  - tophat=2.1.1
+  - tophat
   - cufflinks=2.2.1
   - cutadapt=1.8.3
-  - bowtie2=2.2.9       # a generation that works well with tophat 2.1.1
-  - samtools=1.9
-  - sra-tools>=3.0      # prefetch / fasterq-dump
+  - bowtie2=2.3.0       # a generation that works well with tophat 2.1.1
+  - samtools
+  - sra-tools      # prefetch / fasterq-dump
   - pigz
